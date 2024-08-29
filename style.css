@@ -1,0 +1,136 @@
+/* Body */
+
+
+/* Create background image for jumbo */
+#jumbo {
+    height: 30rem;
+    background-image: url(images/hote-img-1.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 10px;
+}
+
+/* The width of the element is smaller than the page, so set */
+/* add background color close to black with transparency rgba */
+/* add box-shadow, left to righ, top to bottom, radius, color */
+/* Border radius to have rounded corner of 8px */
+/* Text align to center */
+/* Padding top and bottom; left and right is not required */
+/* Center the block element with margin */
+
+/* Positioning element with position - we have static and relative positions */
+/* The use top or right to move hero-content*/
+#jumbo-content {
+    width: 37.5rem;
+    background-color: rgba(50, 40, 40, 0.8);
+    box-shadow: 2px 4px 8px rgb(70, 60, 60);
+    border-radius: 8px;
+    text-align: center;
+    padding: 0.9rem 0;
+    margin: 0 auto;
+    position: relative;
+    top: 10.62rem;
+}
+
+/* Now, lets style jumbo-content */
+/* Make the color of h1 white */
+/* Increase h1 font size */
+/* change h1 font family */
+/* Remove default margin */
+#jumbo-content h1 {
+    color: white;
+    font-size: 2rem;
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+}
+
+/* Paragraph */
+/* Change font color to white */
+#jumbo-content p {
+    color: white;
+}
+
+/* Make anchor tag a button */
+/* Small padding top and bottom, larger padding left and right */
+#jumbo-content a {
+    text-decoration: none;
+    background-color: #ffc100;
+    padding: 6px 12px;
+    color: green;
+    font-weight: 600;
+    border-radius: 8px;
+    box-shadow: 2px 4px 8px black;
+}
+
+/* Add hover effect to our button */
+#jumbo-content a:hover {
+    background-color: #ff7400;
+}
+
+
+/********************* Lets start with jumbo */
+@media(max-width: 768px) {
+    #jumbo {
+        height: 30rem;
+        background-image: url(images/hote-img-1.jpeg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 10px;
+    }
+}
+
+
+/****************************** Next jumbo content */
+/* Ipad and tablets */
+@media(max-width: 768px) {
+    #jumbo-content {
+        width: 29rem;
+        margin-top: 12rem;
+    }
+}
+
+/* Mobile phones */
+@media(max-width: 480px) {
+    #jumbo-content {
+        position: static;
+        margin-left: 2rem;
+        width: 19rem;
+        margin-top: 12rem;
+        padding: 5px 0 10px 0;
+        height: auto;
+    }
+
+    #jumbo-content p {
+        margin-bottom: 2px;
+    }
+
+    #jumbo-content #btn1 {
+        margin-top: 10px;
+    }
+
+    a{
+        display: block; /* So that we can form margin */
+        width: 50%; /* So that we can shorten the button */
+        margin: 1rem auto; /* So that we can center the button */
+    }
+
+}
+
+/* Very small screen */
+@media(max-width: 319px) {
+    #jumbo {
+        padding: 2px;
+    }
+
+    #jumbo-content {
+        width: 14.5rem;
+        padding: 0;
+    }
+
+    #jumbo-content p {
+        margin-top: 0;
+        font-size: 1.3rem;
+    }
+}
