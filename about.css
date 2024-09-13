@@ -1,0 +1,196 @@
+/* Body */
+body{
+    font-family: "Yantramanav", sans-serif;
+    background: #e1e1e1;
+    color: rgb(58,58,58);
+}
+
+body p{
+    line-height: 1.5; /* inclease the spaces between lines  */
+}
+
+
+#jumbo {
+    height: 30rem;
+    background-image: url(images/about-img.PNG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 10px;
+}
+
+#jumbo-content-about {
+    width: 37.5rem;
+    background-color: rgba(50, 40, 40, 0.8);
+    box-shadow: 2px 4px 8px rgb(70, 60, 60);
+    border-radius: 8px;
+    text-align: center;
+    padding: 0.9rem 0;
+    margin: 0 auto;
+    position: relative;
+    top: 10.62rem;
+}
+
+#jumbo-content-about h1 {
+    color: white;
+    font-size: 2rem;
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+}
+
+/* Paragraph */
+/* Change font color to white */
+#jumbo-content-about p {
+    color: white;
+}
+
+/* Make anchor tag a button */
+/* Small padding top and bottom, larger padding left and right */
+#jumbo-content-about a {
+    text-decoration: none;
+    background-color: #ffc100;
+    padding: 6px 12px;
+    color: green;
+    font-weight: 600;
+    border-radius: 8px;
+    box-shadow: 2px 4px 8px black;
+}
+
+/* Add hover effect to our button */
+#jumbo-content-about a:hover {
+    background-color: #ff7400;
+}
+
+
+#about{
+    width: 80%;
+    text-align: center;
+    padding: 0.9rem 0; /* padding top bottom no left and right padding */
+    margin: 0 auto; /* Centre contents */
+}
+
+#mission{
+    width: 100%;
+    margin: 0 auto; /* Centre contents */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #e1e1e1;
+}
+
+#mission img{
+    height: 20rem;
+    width: 90%;
+    border-radius: 8px;
+}
+
+#CSR{
+    width: 80%;
+    text-align: center;
+    padding: 0.9rem 0; /* padding top bottom no left and right padding */
+    margin: 0 auto; /* Centre contents */
+}
+
+#environment{
+    width: 80%;
+    text-align: center;
+    padding: 0.9rem 0; /* padding top bottom no left and right padding */
+    margin: 0 auto; /* Centre contents */
+}
+
+
+/****************************** Next jumbo content */
+/* Ipad and tablets */
+@media(max-width: 768px) {
+    #jumbo-content-about {
+        width: 29rem;
+        margin-top: 12rem;
+    }
+}
+
+@media(max-width: 768px) {
+    #mission {
+        display: block;
+    }
+}
+
+@media(max-width: 768px) {
+    #mission img{
+        width: 80%;
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width: 768px) {
+    #mission-statement {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+/* Mobile phones */
+@media(max-width: 480px) {
+    #jumbo-content-about {
+        position: static;
+        margin-left: 2rem;
+        width: 19rem;
+        margin-top: 12rem;
+        padding: 5px 0 10px 0;
+        height: auto;
+    }
+
+    #jumbo-content-about p {
+        margin-bottom: 2px;
+    }
+
+    #jumbo-content-about #btn1 {
+        margin-top: 10px;
+    }
+
+    a{
+        display: block; /* So that we can form margin */
+        width: 50%; /* So that we can shorten the button */
+        margin: 1rem auto; /* So that we can center the button */
+    }
+
+}
+
+/* Very small screen */
+@media(max-width: 319px) {
+    
+    #jumbo-content-about {
+        width: 14.5rem;
+        padding: 0;
+    }
+
+    #jumbo-content-about p {
+        margin-top: 0;
+        font-size: 1.3rem;
+    }
+}
+
+@media(max-width: 480px) {
+    #mission {
+        display: block;
+    }
+}
+
+@media(max-width: 480px) {
+    #mission img{
+        width: 80%;
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width: 480px) {
+    #mission-statement {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
