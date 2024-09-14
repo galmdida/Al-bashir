@@ -6,6 +6,11 @@ body {
 header {
     background: gray;
     padding: 0.5rem;
+    position: fixed;
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    overflow: hidden;
+    z-index: 100; /* To avoid any element from overlying nav */
 }
 
 .logo img {

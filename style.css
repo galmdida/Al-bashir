@@ -68,6 +68,36 @@
     background-color: #ff7400;
 }
 
+/********************* Services card styling */
+/* Make the card overlying jumbo */
+#services-card{
+    margin-top: -5.3rem;
+    width: 90%;
+    margin: -5.3rem auto 1rem auto;
+}
+
+/* Make the ul flex */
+#services-card ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#services-card ul li{
+    width: 12.8125rem;
+    height: 10.625rem;
+    text-align: center;
+    background: #6ee78c;
+}
+
+#services-card ul li:hover{
+    cursor: pointer;
+    background: #6fb7e7;
+}
+
+
 
 /********************* Lets start with jumbo */
 @media(max-width: 768px) {
@@ -134,3 +164,19 @@
         font-size: 1.3rem;
     }
 }
+
+
+/*********************************** Service card responsive */
+@media(max-width: 768px) {
+    #services-card{
+        margin: 1rem auto 1rem auto;
+        text-align: center; /* To make ul center but add inline block to ul */
+    }
+    #services-card ul{
+        display: inline-block; /*make it centre within the card as desc above */
+    }
+    #services-card ul li{
+        margin-top: 1rem;
+    }
+}
+
