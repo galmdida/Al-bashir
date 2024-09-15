@@ -4,7 +4,7 @@ body {
 }
 
 /* Style contact section in the nav */
-#nav-contact{
+#nav-contact {
     background: rgb(161, 161, 182);
     margin-bottom: 0.5rem;
     width: 100%;
@@ -13,7 +13,7 @@ body {
     padding: 0;
 }
 
-#nav-contact ul{
+#nav-contact ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,13 +22,13 @@ body {
     padding: 0px;
 }
 
-#nav-contact ul li{
+#nav-contact ul li {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-#nav-contact ul li p{
+#nav-contact ul li p {
     margin-left: 0.5rem;
     color: rgb(6, 122, 6);
 }
@@ -37,15 +37,18 @@ body {
 header {
     background: rgb(123, 123, 123);
     padding: 0 3rem 0 0;
-    top: 0; /* Position the navbar at the top of the page */
-    position: sticky; /* Sticky is better than fixed as it keeps the upper part of the header visible when scrolled up */
-    width: 100%; /* Full width */
+    top: 0;
+    /* Position the navbar at the top of the page */
+    position: sticky;
+    /* Sticky is better than fixed as it keeps the upper part of the header visible when scrolled up */
+    width: 100%;
+    /* Full width */
     overflow: hidden;
-    z-index: 100; /* To avoid any element from overlying nav */
-   
+    z-index: 100;
+    /* To avoid any element from overlying nav */
 }
 
-    
+
 
 
 .logo img {
@@ -101,16 +104,18 @@ header .btn {
 
 /*************************** Making responsive */
 /* On small screen do not show nav-contact */
-@media(max-width: 768px){
-    #nav-contact{
+@media(max-width: 768px) {
+    #nav-contact {
         display: none;
     }
 }
+
 @media(max-width: 768px) {
-    header{
+    header {
         padding: 0px;
         margin: 0px;
     }
+
     header .btn {
         display: block;
         padding: 0;
@@ -124,7 +129,7 @@ header .btn {
         width: 18.75rem;
         height: 100vh;
         background: gray;
-        top: 5rem;
+        top: 3.3rem;
         left: 100%;
         /* We are hidding it */
         padding: 5rem 0rem;
