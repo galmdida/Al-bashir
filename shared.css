@@ -3,19 +3,54 @@ body {
     margin: 0px;
 }
 
+/* Style contact section in the nav */
+#nav-contact{
+    background: rgb(161, 161, 182);
+    margin-bottom: 0.5rem;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#nav-contact ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0 3rem 0 3rem;
+    padding: 0px;
+}
+
+#nav-contact ul li{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#nav-contact ul li p{
+    margin-left: 0.5rem;
+    color: rgb(6, 122, 6);
+}
+
+
 header {
-    background: gray;
-    padding: 0.5rem;
-    position: fixed;
+    background: rgb(123, 123, 123);
+    padding: 0 3rem 0 0;
     top: 0; /* Position the navbar at the top of the page */
+    position: sticky; /* Sticky is better than fixed as it keeps the upper part of the header visible when scrolled up */
     width: 100%; /* Full width */
     overflow: hidden;
     z-index: 100; /* To avoid any element from overlying nav */
+   
 }
 
+    
+
+
 .logo img {
-    height: 6.5rem;
-    width: 6.5rem;
+    height: 4.3rem;
+    width: 4.3rem;
 }
 
 nav {
@@ -64,7 +99,13 @@ header .btn {
     display: none;
 }
 
-/* Making responsive */
+/*************************** Making responsive */
+/* On small screen do not show nav-contact */
+@media(max-width: 768px){
+    #nav-contact{
+        display: none;
+    }
+}
 @media(max-width: 768px) {
     header{
         padding: 0px;
