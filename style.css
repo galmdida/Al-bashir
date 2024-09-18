@@ -1,4 +1,13 @@
 /* Body */
+body{
+    font-family: "Yantramanav", sans-serif;
+    background: #e1e1e1;
+    color: rgb(58,58,58);
+}
+
+body p{
+    line-height: 1.5; /* inclease the spaces between lines  */
+}
 
 
 /* Create background image for jumbo */
@@ -98,6 +107,41 @@
 }
 
 
+/***************************** Style highlight intro section */
+#highlight-intro{
+    width: 90%;
+    margin: 0 auto; /* Centre contents */
+    display: flex;
+    justify-content: space-between;
+    /* text-align: center; */
+    gap: 1.5rem;
+}
+
+#highlight-intro-img{
+    margin-top: 5rem; /* Push image downward */
+}
+
+#highlight-intro-img img{
+    height: 20rem;
+}
+
+.end-btn{
+    background: #326f77;
+    margin: 1rem 0px;
+    width: 10rem;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 6px;
+}
+
+.end-btn a{
+    color: white; /* Change the text color in the button */
+}
+
+.end-btn:hover{
+    background: #4597a1;
+}
+
 
 /********************* Lets start with jumbo */
 @media(max-width: 768px) {
@@ -180,3 +224,35 @@
     }
 }
 
+
+
+/******************************** Highlight itro responsive */
+@media(max-width: 768px){
+    #highlight-intro{
+        width: 90%;
+        margin: 0 auto; /* Centre contents */
+        display: block;
+        justify-content: space-between;
+        text-align: center; /* Make text align center in small screen */
+        gap: 1.5rem;
+    }
+
+    .end-btn{
+        background: #326f77;
+        margin: 0.5rem 0px;
+        width: 19rem;
+        text-align: center;
+        padding: 0.5rem;
+        border-radius: 6px;
+    }
+
+    #highlight-intro-img{
+        margin-top: 0rem; /* No need to push image downward */
+        margin-bottom: 0.5rem; /* Create some space below */
+    }
+
+    #highlight-intro-img img{
+        height: auto;
+        width: auto;
+    }
+}
