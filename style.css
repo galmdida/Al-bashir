@@ -1,12 +1,13 @@
 /* Body */
-body{
+body {
     font-family: "Yantramanav", sans-serif;
     background: #e1e1e1;
-    color: rgb(58,58,58);
+    color: rgb(58, 58, 58);
 }
 
-body p{
-    line-height: 1.5; /* inclease the spaces between lines  */
+body p {
+    line-height: 1.5;
+    /* inclease the spaces between lines  */
 }
 
 
@@ -77,16 +78,17 @@ body p{
     background-color: #ff7400;
 }
 
-/********************* Services card styling */
+/**************************************** Services card styling */
 /* Make the card overlying jumbo */
-#services-card{
+#services-card {
     margin-top: -5.3rem;
     width: 90%;
     margin: -5.3rem auto 1rem auto;
+    border-radius: 6px;
 }
 
 /* Make the ul flex */
-#services-card ul{
+#services-card ul {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -94,38 +96,45 @@ body p{
     justify-content: space-between;
 }
 
-#services-card ul li{
+#services-card ul li {
     width: 12.8125rem;
     height: 10.625rem;
     text-align: center;
-    background: #6ee78c;
+    background: #2e6266;
+    border-radius: 5px;
+    color: #e1e1e1;
 }
 
-#services-card ul li:hover{
+#services-card ul li:hover {
     cursor: pointer;
-    background: #6fb7e7;
+    background: #12496e;
 }
 
 
 /***************************** Style highlight intro section */
-#highlight-intro{
+#highlight-intro {
     width: 90%;
-    margin: 0 auto; /* Centre contents */
+    margin: 0 auto;
+    /* Centre contents */
     display: flex;
     justify-content: space-between;
     /* text-align: center; */
     gap: 1.5rem;
+    margin-bottom: 3rem;
 }
 
-#highlight-intro-img{
-    margin-top: 5rem; /* Push image downward */
+#highlight-intro-img {
+    margin-top: 2rem;
+    /* Push image downward */
 }
 
-#highlight-intro-img img{
-    height: 20rem;
+#highlight-intro-img img {
+    height: 25rem;
+    width: 30rem;
+    border-radius: 5px;
 }
 
-.end-btn{
+.end-btn {
     background: #326f77;
     margin: 1rem 0px;
     width: 10rem;
@@ -134,16 +143,211 @@ body p{
     border-radius: 6px;
 }
 
-.end-btn a{
-    color: white; /* Change the text color in the button */
+.end-btn a {
+    color: white;
+    /* Change the text color in the button */
 }
 
-.end-btn:hover{
+.end-btn:hover {
     background: #4597a1;
 }
 
+/************************************** Style rooms sections */
+#rooms {
+    width: 90%;
+    margin: 0 auto;
+    /* Centre contents */
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
 
-/********************* Lets start with jumbo */
+#rooms h2 {
+    margin: 0.5rem;
+}
+
+.end-btn {
+    display: inline-block;
+}
+
+#rooms-img {
+    height: 18rem;
+    width: 130rem;
+    background-image: url(images/bed-img.PNG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    /* Push image downward */
+    border-radius: 5px;
+}
+
+.room-content {
+    background-color: rgba(50, 40, 40, 0.3);
+    box-shadow: 2px 4px 8px rgb(70, 60, 60);
+    border-radius: 8px;
+    text-align: center;
+    padding: 0.9rem 0;
+    margin: 0 auto;
+    position: relative;
+    top: 4.62rem;
+    color: white;
+}
+
+.room-content a {
+    background: #326f77;
+    margin: 1rem 0px;
+    width: 10rem;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 6px;
+}
+
+.room-content a {
+    color: white;
+    /* Change the text color in the button */
+}
+
+.room-content a:hover {
+    background: rgba(63, 187, 196, 0.5);
+    color: rgb(238, 229, 229);
+}
+
+/************************************** Style food sections */
+#food {
+    width: 90%;
+    margin: 0 auto;
+    /* Centre contents */
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+#food h2 {
+    margin: 0.5rem;
+}
+
+.end-btn {
+    display: inline-block;
+}
+
+#food-img {
+    height: 18rem;
+    width: 130rem;
+    background-image: url(images/food-img.PNG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    /* Push image downward */
+    border-radius: 5px;
+}
+
+.food-content {
+    background-color: rgba(50, 40, 40, 0.3);
+    box-shadow: 2px 4px 8px rgb(70, 60, 60);
+    border-radius: 8px;
+    text-align: center;
+    padding: 0.9rem 0;
+    margin: 0 auto;
+    position: relative;
+    top: 4.62rem;
+    color: white;
+}
+
+.food-content a {
+    background: #326f77;
+    margin: 1rem 0px;
+    width: 10rem;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 6px;
+}
+
+.food-content a {
+    color: white;
+    /* Change the text color in the button */
+}
+
+.food-content a:hover {
+    background: rgba(63, 187, 196, 0.5);
+    color: rgb(238, 229, 229);
+}
+
+/************************************** Style conference sections */
+#conference {
+    width: 90%;
+    margin: 0 auto;
+    /* Centre contents */
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+#conference h2 {
+    margin: 0.5rem;
+}
+
+.end-btn {
+    display: inline-block;
+}
+
+#conference-img {
+    height: 18rem;
+    width: 130rem;
+    background-image: url(images/conference2-img.PNG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    /* Push image downward */
+    border-radius: 5px;
+}
+
+.conference-content {
+    background-color: rgba(50, 40, 40, 0.3);
+    box-shadow: 2px 4px 8px rgb(70, 60, 60);
+    border-radius: 8px;
+    text-align: center;
+    padding: 0.9rem 0;
+    margin: 0 auto;
+    position: relative;
+    top: 4.62rem;
+    color: white;
+}
+
+.conference-content a {
+    background: #326f77;
+    margin: 1rem 0px;
+    width: 10rem;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 6px;
+}
+
+.conference-content a {
+    color: white;
+    /* Change the text color in the button */
+}
+
+.conference-content a:hover {
+    background: rgba(63, 187, 196, 0.5);
+    color: rgb(238, 229, 229);
+}
+
+
+
+
+/************************************** Lets start with jumbo */
 @media(max-width: 768px) {
     #jumbo {
         height: 30rem;
@@ -184,10 +388,13 @@ body p{
         margin-top: 10px;
     }
 
-    a{
-        display: block; /* So that we can form margin */
-        width: 50%; /* So that we can shorten the button */
-        margin: 1rem auto; /* So that we can center the button */
+    a {
+        display: block;
+        /* So that we can form margin */
+        width: 50%;
+        /* So that we can shorten the button */
+        margin: 1rem auto;
+        /* So that we can center the button */
     }
 
 }
@@ -212,14 +419,18 @@ body p{
 
 /*********************************** Service card responsive */
 @media(max-width: 768px) {
-    #services-card{
+    #services-card {
         margin: 1rem auto 1rem auto;
-        text-align: center; /* To make ul center but add inline block to ul */
+        text-align: center;
+        /* To make ul center but add inline block to ul */
     }
-    #services-card ul{
-        display: inline-block; /*make it centre within the card as desc above */
+
+    #services-card ul {
+        display: inline-block;
+        /*make it centre within the card as desc above */
     }
-    #services-card ul li{
+
+    #services-card ul li {
         margin-top: 1rem;
     }
 }
@@ -227,17 +438,19 @@ body p{
 
 
 /******************************** Highlight itro responsive */
-@media(max-width: 768px){
-    #highlight-intro{
+@media(max-width: 768px) {
+    #highlight-intro {
         width: 90%;
-        margin: 0 auto; /* Centre contents */
+        margin: 0 auto;
+        /* Centre contents */
         display: block;
         justify-content: space-between;
-        text-align: center; /* Make text align center in small screen */
+        text-align: center;
+        /* Make text align center in small screen */
         gap: 1.5rem;
     }
 
-    .end-btn{
+    .end-btn {
         background: #326f77;
         margin: 0.5rem 0px;
         width: 19rem;
@@ -246,13 +459,127 @@ body p{
         border-radius: 6px;
     }
 
-    #highlight-intro-img{
-        margin-top: 0rem; /* No need to push image downward */
-        margin-bottom: 0.5rem; /* Create some space below */
+    #highlight-intro-img {
+        margin-top: 0rem;
+        /* No need to push image downward */
+        margin-bottom: 0.5rem;
+        /* Create some space below */
     }
 
-    #highlight-intro-img img{
+    #highlight-intro-img img {
         height: auto;
         width: auto;
+    }
+}
+
+/************************************** Style rooms sections */
+@media(max-width:768px) {
+    #rooms {
+        width: 90%;
+        margin: 0 auto;
+        /* Centre contents */
+        display: block;
+        text-align: center;
+    }
+
+    #rooms-img {
+        height: 18rem;
+        width: 19.5rem;
+        background-image: url(images/bed-img.PNG);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 10px;
+    }
+
+    #room-content {
+        width: 18rem;
+        margin-top: 12rem;
+    }
+
+    .room-content {
+        text-align: center;
+    }
+
+    .room-content a{
+        display: inline-block;
+        text-align: center;
+    }
+
+
+    .end-btn {
+        display: block;
+    }
+}
+
+@media(max-width:768px) {
+    #food {
+        width: 90%;
+        margin: 0 auto;
+        /* Centre contents */
+        display: block;
+        text-align: center;
+    }
+
+    #food-img {
+        height: 18rem;
+        width: 19.5rem;
+        background-image: url(images/food-img.PNG);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 10px;
+    }
+
+    #food-content {
+        width: 18rem;
+        margin-top: 12rem;
+    }
+
+    .food-content {
+        text-align: center;
+    }
+
+    .food-content a{
+        display: inline-block;
+        text-align: center;
+    }
+
+
+    .end-btn {
+        display: block;
+    }
+}
+
+@media(max-width:768px) {
+    #conference {
+        width: 90%;
+        margin: 0 auto;
+        /* Centre contents */
+        display: block;
+        text-align: center;
+    }
+
+    #conference-img {
+        height: 18rem;
+        width: 19.5rem;
+        background-image: url(images/conference-img.PNG);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 10px;
+    }
+
+    .conference-content {
+        text-align: center;
+    }
+
+    .conference-content a{
+        display: inline-block;
+        text-align: center;
+    }
+
+    .end-btn {
+        display: inline-block;
     }
 }
