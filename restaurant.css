@@ -1,0 +1,109 @@
+* Body */
+body{
+    font-family: "Yantramanav", sans-serif;
+    background: #e1e1e1;
+    color: rgb(58,58,58);
+}
+
+body p{
+    line-height: 1.5; /* inclease the spaces between lines  */
+}
+
+
+#restaurant-intro {
+    height: 30rem;
+    background-image: url(images/food-img.PNG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 10px;
+}
+
+#restaurant-intro-content {
+    width: 37.5rem;
+    background-color: rgba(50, 40, 40, 0.2);
+    box-shadow: 2px 4px 8px rgb(70, 60, 60);
+    border-radius: 8px;
+    text-align: center;
+    padding: 0.9rem 0;
+    margin: 0 auto;
+    position: relative;
+    top: 10.62rem;
+}
+
+#restaurant-intro-content h1 {
+    color: white;
+    font-size: 2rem;
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+}
+
+/* Paragraph */
+/* Change font color to white */
+#restaurant-intro-content p {
+    color: white;
+}
+
+/********************************* Style rest-desc */
+#rest-desc{
+    width: 90%;
+    margin: 0 auto;
+}
+
+#rest-desc h2{
+    text-align: center;
+}
+
+/***************************************** Style menu section */
+#menu{
+    width: 90%;
+    margin: 0 auto;
+}
+#menu h2{
+    text-align: center;
+}
+
+
+#menu-header{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#menu-header ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#menu-header ul li a{
+    background: orange;
+    color: rgb(33, 106, 148);
+    padding: 0.5rem 1rem;
+    box-shadow: 2px 4px 8px rgb(70, 60, 60);
+    border-radius: 8px;
+}
+
+/***************************************** Make menu header responsive */
+@media(max-width: 768px) {
+    #restaurant-intro-content {
+        width: 22rem;
+        margin-top: 0rem;
+    }
+}
+
+@media(max-width: 768px){
+    #menu-header ul{
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+    #menu-header ul li{
+        margin: 0;
+        padding: 0;
+        margin: 1.4rem auto;
+    }
+}

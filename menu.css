@@ -1,0 +1,102 @@
+/************************ */
+#food-h2{
+    margin-top: 0.9rem;
+    background: rgb(34, 33, 33);
+}
+#food-list h2{
+    color: orange;
+    text-align: center;
+    margin-bottom: 0;
+    font-weight: bold;
+    padding: 0.9rem;
+}
+/* Change the size of images */
+#food-list img{
+    height: 15rem;
+    width: 100%;
+}
+
+/* Create grid with 3 columns */
+#food-list ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0rem 0.9rem;
+    margin: 0;
+}
+
+/* Make the below description flex */
+/* Create space between the list */
+/* Align items to the center */
+/* Make the below description to move up */
+#food-list .description ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    gap: 0 1.2rem;
+}
+
+/* Style list */
+#food-list .top{
+    background-color: rgb(29, 21, 21);
+    box-shadow: 1px 1px 2px black;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.top{
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+/* Style h2 */
+h1{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Style the description links */
+.description li a{
+    text-decoration: none;
+    color: rgb(245, 241, 241);
+    font-size: 1.2rem;
+    background-color: rgb(14, 13, 13);
+    box-shadow: 1px 1px 2px black;
+    padding: 0.5rem;
+    border-radius: 6px;
+}
+
+/* Style hover effect */
+.description li a:hover{
+    color: red;
+}
+
+/* Sytle price */
+.description li p{
+    color: white;
+    font-size: 1.2rem;
+    background-color: rgb(14, 13, 13);
+    box-shadow: 1px 1px 2px black;
+    padding: 0.5rem;
+    border-radius: 6px;
+}
+
+.conclusion{
+    margin-top: 4rem;
+}
+
+.conclusion p{
+    font-size: large;
+    text-align: center;
+}
+
+/************************************** Make section responsive */
+@media(max-width: 768px){
+    #food-list ul{
+        display: block;
+    }
+}
