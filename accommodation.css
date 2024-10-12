@@ -1,0 +1,151 @@
+/* Body */
+body {
+    font-family: "Yantramanav", sans-serif;
+    background: #e1e1e1;
+    color: rgb(58, 58, 58);
+}
+
+body p {
+    line-height: 1.5;
+    /* inclease the spaces between lines  */
+}
+
+
+/* Create background image for jumbo */
+#jumbo {
+    height: 20rem;
+    background-image: url(rooms-img/room.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 10px;
+}
+
+/* The width of the element is smaller than the page, so set */
+/* add background color close to black with transparency rgba */
+/* add box-shadow, left to righ, top to bottom, radius, color */
+/* Border radius to have rounded corner of 8px */
+/* Text align to center */
+/* Padding top and bottom; left and right is not required */
+/* Center the block element with margin */
+
+/* Positioning element with position - we have static and relative positions */
+/* The use top or right to move hero-content*/
+#jumbo-content {
+    width: 37.5rem;
+    background-color: rgba(50, 40, 40, 0.3);
+    box-shadow: 2px 4px 8px rgb(70, 60, 60);
+    border-radius: 8px;
+    text-align: center;
+    padding: 0.9rem 0;
+    margin: 0 auto;
+    position: relative;
+    top: 10.62rem;
+}
+
+/* Now, lets style jumbo-content */
+/* Make the color of h1 white */
+/* Increase h1 font size */
+/* change h1 font family */
+/* Remove default margin */
+#jumbo-content h1 {
+    color: white;
+    font-size: 2rem;
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+}
+
+/* Paragraph */
+/* Change font color to white */
+#jumbo-content p {
+    color: white;
+}
+
+/******************************************** Style accommodation section */
+#accommodation {
+    margin: 1rem auto;
+}
+
+#accommodation ul {
+    list-style: none;
+    margin: 0px auto;
+    padding: 0px;
+    border-style: solid;
+    border-color: rgb(206, 202, 202);
+    border-width: 0.1px;
+}
+
+#accommodation ul li div {
+    border-style: solid;
+    border-width: 0.1px;
+    border-color: rgb(206, 202, 202);
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+}
+
+#accommodation ul li #img-div{
+    border: none;
+}
+
+#accommodation ul li {
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    gap: 4rem;
+    text-align: center;
+}
+
+#accommodation ul li img {
+    width: 20rem;
+    border-radius: 6px;
+}
+
+
+#accommodation ul li .price{
+    margin-top: 1rem;
+    margin-bottom: 0px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+#accommodation ul li .per{
+    margin-top: 0.1rem;
+}
+
+
+#accommodation ul li .desc-link{
+    display: block;
+    margin-top: 2rem;
+    text-decoration: none;
+    color: rgb(28, 119, 119);
+}
+
+.desc-link:hover{
+    background-color: rgb(66, 202, 202);
+    box-shadow: 2px 2px 2px black;
+    border-radius: 6px;
+    text-align: center;
+    width: 100%;
+    padding: 0.2rem 0px;
+}
+
+/************************************** Making the page responsive */
+@media(max-width: 768px){
+    #jumbo-content {
+        width: 22rem;
+        margin-top: 0rem;
+    }
+
+    #accommodation ul li {
+        display: block;
+    }
+    #accommodation ul li div {
+        border: none;
+    }
+
+    #accommodation ul li .desc-link{
+        margin-bottom: 2rem;
+    }
+}

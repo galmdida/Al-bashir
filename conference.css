@@ -1,0 +1,590 @@
+/* Body */
+body {
+    font-family: "Yantramanav", sans-serif;
+    background: #e1e1e1;
+    color: rgb(58, 58, 58);
+}
+
+body p {
+    line-height: 1.5;
+    /* inclease the spaces between lines  */
+}
+
+
+/* Create background image for jumbo */
+#jumbo {
+    height: 30rem;
+    background-image: url(images/hote-img-1.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 10px;
+}
+
+/* The width of the element is smaller than the page, so set */
+/* add background color close to black with transparency rgba */
+/* add box-shadow, left to righ, top to bottom, radius, color */
+/* Border radius to have rounded corner of 8px */
+/* Text align to center */
+/* Padding top and bottom; left and right is not required */
+/* Center the block element with margin */
+
+/* Positioning element with position - we have static and relative positions */
+/* The use top or right to move hero-content*/
+#jumbo-content {
+    width: 37.5rem;
+    background-color: rgba(50, 40, 40, 0.8);
+    box-shadow: 2px 4px 8px rgb(70, 60, 60);
+    border-radius: 8px;
+    text-align: center;
+    padding: 0.9rem 0;
+    margin: 0 auto;
+    position: relative;
+    top: 10.62rem;
+}
+
+/* Now, lets style jumbo-content */
+/* Make the color of h1 white */
+/* Increase h1 font size */
+/* change h1 font family */
+/* Remove default margin */
+#jumbo-content h1 {
+    color: white;
+    font-size: 2rem;
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+}
+
+/* Paragraph */
+/* Change font color to white */
+#jumbo-content p {
+    color: white;
+}
+
+/* Make anchor tag a button */
+/* Small padding top and bottom, larger padding left and right */
+#jumbo-content a {
+    text-decoration: none;
+    background-color: #ffc100;
+    padding: 6px 12px;
+    color: green;
+    font-weight: 600;
+    border-radius: 8px;
+    box-shadow: 2px 4px 8px black;
+}
+
+/* Add hover effect to our button */
+#jumbo-content a:hover {
+    background-color: #ff7400;
+}
+
+/**************************************** Services card styling */
+/* Make the card overlying jumbo */
+#services-card {
+    margin-top: -5.3rem;
+    width: 90%;
+    margin: -5.3rem auto 1rem auto;
+    border-radius: 6px;
+}
+
+/* Make the ul flex */
+#services-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#services-card ul li {
+    width: 12.8125rem;
+    height: 10.625rem;
+    text-align: center;
+    background: #2e6266;
+    border-radius: 5px;
+    color: #e1e1e1;
+}
+
+#services-card ul li:hover {
+    cursor: pointer;
+    background: #12496e;
+}
+
+
+/***************************** Style highlight intro section */
+#highlight-intro {
+    width: 90%;
+    margin: 0 auto;
+    /* Centre contents */
+    display: flex;
+    justify-content: space-between;
+    /* text-align: center; */
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+#highlight-intro-img {
+    margin-top: 2rem;
+    /* Push image downward */
+}
+
+#highlight-intro-img img {
+    height: 25rem;
+    width: 30rem;
+    border-radius: 5px;
+}
+
+.end-btn {
+    background: #326f77;
+    margin: 1rem 0px;
+    width: 10rem;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 6px;
+}
+
+.end-btn a {
+    color: white;
+    /* Change the text color in the button */
+}
+
+.end-btn:hover {
+    background: #4597a1;
+}
+
+/************************************** Style rooms sections */
+.rooms {
+    width: 90%;
+    margin: 0 auto;
+    /* Centre contents */
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.rooms h2 {
+    margin: 1.5rem;
+}
+
+.end-btn {
+    display: inline-block;
+}
+
+#diamond-img {
+    height: 18rem;
+    width: 100rem;
+    background-image: url(conference-img/diamond.PNG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    /* Push image downward */
+    border-radius: 5px;
+}
+
+.room-content {
+    background-color: rgba(50, 40, 40, 0.3);
+    box-shadow: 2px 4px 8px rgb(70, 60, 60);
+    border-radius: 8px;
+    text-align: center;
+    padding: 0.9rem 0;
+    margin: 0 auto;
+    position: relative;
+    top: 4.62rem;
+    color: white;
+}
+
+.room-content a {
+    background: #326f77;
+    margin: 1rem 0px;
+    width: 10rem;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 6px;
+}
+
+.room-content a {
+    color: white;
+    /* Change the text color in the button */
+}
+
+.room-content a:hover {
+    background: rgba(63, 187, 196, 0.5);
+    color: rgb(238, 229, 229);
+}
+
+/************************************** Style food sections */
+#amber-img {
+    height: 18rem;
+    width: 100rem;
+    background-image: url(conference-img/amber.PNG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    /* Push image downward */
+    border-radius: 5px;
+}
+
+.food-content {
+    background-color: rgba(50, 40, 40, 0.3);
+    box-shadow: 2px 4px 8px rgb(70, 60, 60);
+    border-radius: 8px;
+    text-align: center;
+    padding: 0.9rem 0;
+    margin: 0 auto;
+    position: relative;
+    top: 4.62rem;
+    color: white;
+}
+
+.food-content a {
+    background: #326f77;
+    margin: 1rem 0px;
+    width: 10rem;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 6px;
+}
+
+.food-content a {
+    color: white;
+    /* Change the text color in the button */
+}
+
+.food-content a:hover {
+    background: rgba(63, 187, 196, 0.5);
+    color: rgb(238, 229, 229);
+}
+
+/************************************** Style conference sections */
+#emerald-img {
+    height: 18rem;
+    width: 130rem;
+    background-image: url(images/conference2-img.PNG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    /* Push image downward */
+    border-radius: 5px;
+}
+
+.conference-content {
+    background-color: rgba(50, 40, 40, 0.3);
+    box-shadow: 2px 4px 8px rgb(70, 60, 60);
+    border-radius: 8px;
+    text-align: center;
+    padding: 0.9rem 0;
+    margin: 0 auto;
+    position: relative;
+    top: 4.62rem;
+    color: white;
+}
+
+.conference-content a {
+    background: #326f77;
+    margin: 1rem 0px;
+    width: 10rem;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 6px;
+}
+
+.conference-content a {
+    color: white;
+    /* Change the text color in the button */
+}
+
+.conference-content a:hover {
+    background: rgba(63, 187, 196, 0.5);
+    color: rgb(238, 229, 229);
+}
+
+
+/************************************** Style conference sections */
+#crystal-img {
+    height: 18rem;
+    width: 130rem;
+    background-image: url(conference-img/crystal.PNG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    /* Push image downward */
+    border-radius: 5px;
+}
+
+#rubby-img {
+    height: 18rem;
+    width: 130rem;
+    background-image: url(conference-img/rubby.PNG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    /* Push image downward */
+    border-radius: 5px;
+}
+
+#sapphire-img {
+    height: 18rem;
+    width: 130rem;
+    background-image: url(conference-img/sapphire.PNG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    /* Push image downward */
+    border-radius: 5px;
+}
+
+
+
+
+
+/************************************** Lets start with jumbo */
+@media(max-width: 768px) {
+    #jumbo {
+        height: 30rem;
+        background-image: url(images/hote-img-1.jpeg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 10px;
+    }
+}
+
+
+/****************************** Next jumbo content */
+/* Ipad and tablets */
+@media(max-width: 768px) {
+    #jumbo-content {
+        width: 29rem;
+        margin-top: 12rem;
+    }
+}
+
+/* Mobile phones */
+@media(max-width: 480px) {
+    #jumbo-content {
+        position: static;
+        margin-left: 2rem;
+        width: 19rem;
+        margin-top: 12rem;
+        padding: 5px 0 10px 0;
+        height: auto;
+    }
+
+    #jumbo-content p {
+        margin-bottom: 2px;
+    }
+
+    #jumbo-content #btn1 {
+        margin-top: 10px;
+    }
+
+    a {
+        display: block;
+        /* So that we can form margin */
+        width: 50%;
+        /* So that we can shorten the button */
+        margin: 1rem auto;
+        /* So that we can center the button */
+    }
+
+}
+
+/* Very small screen */
+@media(max-width: 319px) {
+    #jumbo {
+        padding: 2px;
+    }
+
+    #jumbo-content {
+        width: 14.5rem;
+        padding: 0;
+    }
+
+    #jumbo-content p {
+        margin-top: 0;
+        font-size: 1.3rem;
+    }
+}
+
+
+/******************************** Highlight itro responsive */
+@media(max-width: 768px) {
+    #highlight-intro {
+        width: 90%;
+        margin: 0 auto;
+        /* Centre contents */
+        display: block;
+        justify-content: space-between;
+        text-align: center;
+        /* Make text align center in small screen */
+        gap: 1.5rem;
+    }
+
+    .end-btn {
+        background: #326f77;
+        margin: 0.5rem 0px;
+        width: 19rem;
+        text-align: center;
+        padding: 0.5rem;
+        border-radius: 6px;
+    }
+
+    #highlight-intro-img {
+        margin-top: 0rem;
+        /* No need to push image downward */
+        margin-bottom: 0.5rem;
+        /* Create some space below */
+    }
+
+    #highlight-intro-img img {
+        height: auto;
+        width: auto;
+    }
+}
+
+/************************************** Style rooms sections */
+@media(max-width:768px) {
+    .rooms {
+        width: 90%;
+        margin: 0 auto;
+        /* Centre contents */
+        display: block;
+        text-align: center;
+    }
+
+    #diamond-img {
+        height: 18rem;
+        width: 19.5rem;
+        padding: 10px;
+    }
+    #amber-img {
+        height: 18rem;
+        width: 19.5rem;
+        padding: 10px;
+    }
+    #emerald-img {
+        height: 18rem;
+        width: 19.5rem;
+        padding: 10px;
+    }
+    #crystal-img {
+        height: 18rem;
+        width: 19.5rem;
+        padding: 10px;
+    }
+    #rubby-img {
+        height: 18rem;
+        width: 19.5rem;
+        padding: 10px;
+    }
+    #sapphire-img {
+        height: 18rem;
+        width: 19.5rem;
+        padding: 10px;
+    }
+
+    #room-content {
+        width: 18rem;
+        margin-top: 12rem;
+    }
+
+    .room-content {
+        text-align: center;
+    }
+
+    .room-content a{
+        display: inline-block;
+        text-align: center;
+    }
+
+
+    .end-btn {
+        display: block;
+    }
+}
+
+@media(max-width:768px) {
+    #food {
+        width: 90%;
+        margin: 0 auto;
+        /* Centre contents */
+        display: block;
+        text-align: center;
+    }
+
+    #food-img {
+        height: 18rem;
+        width: 19.5rem;
+        background-image: url(images/food-img.PNG);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 10px;
+    }
+
+    #food-content {
+        width: 18rem;
+        margin-top: 12rem;
+    }
+
+    .food-content {
+        text-align: center;
+    }
+
+    .food-content a{
+        display: inline-block;
+        text-align: center;
+    }
+
+
+    .end-btn {
+        display: block;
+    }
+}
+
+@media(max-width:768px) {
+    #conference {
+        width: 90%;
+        margin: 0 auto;
+        /* Centre contents */
+        display: block;
+        text-align: center;
+    }
+
+    #conference-img {
+        height: 18rem;
+        width: 19.5rem;
+        background-image: url(images/conference-img.PNG);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 10px;
+    }
+
+    .conference-content {
+        text-align: center;
+    }
+
+    .conference-content a{
+        display: inline-block;
+        text-align: center;
+    }
+
+    .end-btn {
+        display: inline-block;
+    }
+}
